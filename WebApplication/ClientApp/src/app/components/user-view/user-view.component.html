@@ -1,0 +1,20 @@
+<h1><span class="">User Info</span></h1>
+<div class="row" *ngIf="user">
+  <div class="">
+    <div class="">
+      <div class="">
+        <label for="id">Id:</label>
+        <span>{{user.ID}}</span>
+      </div>
+      <div class="">
+        <label for="username">UserName:</label>
+        <span>{{user.UserName}}</span>
+      </div>
+      <div class="">
+        <label for="password">Password:</label>
+        <span class="">{{user.Password}}</span>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" (click)="openDialog(user.ID)">Delete</button>
+</div>
