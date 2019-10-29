@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
 import { CreditsComponent } from './credits/credits.component';
 import { UserGridComponent } from './components/user-grid/user-grid.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
@@ -23,7 +22,6 @@ import { UserViewComponent } from './components/user-view/user-view.component';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
     CreditsComponent,
     UserGridComponent,
     UserFormComponent,
@@ -44,7 +42,6 @@ import { UserViewComponent } from './components/user-view/user-view.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'app-home/:action', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
       { path: 'credits', component: CreditsComponent },
       { path: 'user-form', component: UserFormComponent },
       { path: 'user-view/:id', component: UserViewComponent },
